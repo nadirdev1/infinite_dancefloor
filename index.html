@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Create Avatar</title>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <link rel="shortcut icon" href="fav.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Public+Sans:300,400,400i,700,700i&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/dat.gui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/dat.gui.css" />
+  </head>
+  <body>
+    <div id="splash-screen">
+      <p id="splash-close">X</p>
+      <p>
+        The infinite vibration, the tool for sharing your MOOD! <br /><br />
+        Good, or bad, use the 4 waves to generate the perfect position of how do you feel today.
+        <br /><br />
+        After that, save them and find them back in the infinite vibe
+        <br />
+        <br />
+      </p>
+    </div>
+
+    <header class="header-pink container"></header>
+    <div class="container d-flex flex-column flex-md-row align-items-center">
+      <div class="header-title">
+        <a class="header-a" href="index.html"> <h1 class="header-h1 pt-3 m-0">THe infinite ViBRaTion</h1></a>
+        <h3 class="header-h3 pl-4">Express your Mood!</h3>
+      </div>
+      <div class="row align-items-center mb-5">
+        <div class="col-md mr-0 pr-md-0 mb-md-0">
+          <a class="btn-vib btn-color-2 btn header-title" href="visualiser.html"> Visualisation </a>
+        </div>
+      </div>
+    </div>
+
+    <div id="sketch-form" class="container">
+      <div class="form-group inputs">
+        <label for="username" class="text-muted mb-1">
+          <small>Username</small>
+        </label>
+        <input autofocus required name="username" id="username" class="form-control form-control-lg form-control-title user-fields input-vib-search" type="text" placeholder="Your unique username" autocomplete="off" />
+      </div>
+
+      <div id="sketch-container" class="form-group">
+        <div id="GUI"></div>
+      </div>
+      <div id="btn-validate-group" class="form-group btn-index"></div>
+    </div>
+
+    <script src="sketch.js"></script>
+    <script src="waves.js"></script>
+  </body>
+</html>

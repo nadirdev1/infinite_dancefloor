@@ -1,0 +1,97 @@
+@font-face {
+  font-family: RobotoMed;
+  src: url(../public/fonts/Roboto-Medium.ttf) format("truetype");
+}
+
+.dg.main {
+  color: black !important;
+  font-family: RobotoMed !important;
+  font-weight: 300;
+}
+
+.dg.main.taller-than-window .close-button {
+  border-top: 1px solid #e9bbff;
+  background: #e9bbff;
+  color: black;
+}
+
+.dg.main .close-button {
+  background-color: #e9bbff;
+}
+
+.dg.main .close-button:hover {
+  background-color: #a6ff7c;
+}
+
+.dg {
+  color: #555;
+  text-shadow: none !important;
+}
+
+.dg.main::-webkit-scrollbar {
+  background: #fafafa;
+}
+
+.dg.main::-webkit-scrollbar-thumb {
+  background: #bbb;
+}
+
+.dg li:not(.folder) {
+  background: #e9bbff;
+  border-bottom: 1px solid #e9bbff;
+}
+
+.dg li.save-row .button {
+  text-shadow: none !important;
+}
+
+.dg li.title {
+  background: #e8e8e8 url(data:image/gif;base64,R0lGODlhBQAFAJEAAP////Pz8////////yH5BAEAAAIALAAAAAAFAAUAAAIIlI+hKgFxoCgAOw==) 6px 10px no-repeat;
+}
+
+.dg .cr.function:hover,
+.dg .cr.boolean:hover {
+  background: #fff;
+}
+
+.dg .c input[type="text"] {
+  border: 1px black solid !important;
+}
+
+.dg .c input[type="text"]:hover {
+  background: #eee;
+}
+
+.dg .c input[type="text"]:focus {
+  background: #eee;
+  color: #555;
+}
+
+.dg .c .slider {
+  background: #e9e9e9;
+}
+
+.dg .c .slider:hover {
+  background: #eee;
+}
+
+.dg .cr.number input[type="text"] {
+  width: 2rem;
+  padding-bottom: 1rem;
+
+  color: black !important;
+  background: #e9bbff;
+  border: 0px !important;
+}
+
+.dg .cr.number input[type="text"]:hover {
+  background: #eee;
+}
+
+element.style {
+  width: 84%;
+}
+.dg .c .slider-fg {
+  background: #a6ff7c !important;
+  max-width: 100%;
+}

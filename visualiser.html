@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Create Avatar</title>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+
+    <link rel="shortcut icon" href="fav.ico" type="image/x-icon" />
+
+    <link href="https://fonts.googleapis.com/css?family=Public+Sans:300,400,400i,700,700i&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+  </head>
+  <body>
+    <header class="header-pink container"></header>
+
+    <div class="container d-flex flex-column flex-md-row align-items-center">
+      <div class="header-title">
+        <a class="header-a" href="index.html"> <h1 class="header-h1 pt-3 m-0">THe infinite ViBRaTion</h1></a>
+        <h3 class="header-h3 pl-4">Express your Mood!</h3>
+      </div>
+      <div class="row align-items-center mb-5">
+        <div class="col-md mr-0 pr-md-0 mb-md-0">
+          <a class="btn-vib btn-color-1 btn header-title" href="index.html"> Create Avatar </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="form-group inputs">
+        <div class="input-group">
+          <input autofocus id="input-find-my-avatars" type="text" class="form-control form-control-lg form-control-title input-vib-search user-fields" placeholder="Find your avatars" />
+          <div class="input-group-append">
+            <button id="button-find-my-avatars" class="btn btn-secondary btn-color-2 btn-vib-search" type="button">
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <p><span id="span-user"></span></p>
+
+      <div id="dancing_floor"></div>
+    </div>
+
+    <script src="nameSpacedWaves.js"></script>
+    <script src="sketchVisualiser.js"></script>
+  </body>
+</html>
